@@ -1,0 +1,72 @@
+{{!< default}}
+
+<header class="site_width text center padding_top_big margin_bottom_big">
+  {{#if @blog.logo}}<a href="{{@blog.url}}"><div style="background: url({{@blog.logo}})"></div></a>{{/if}}
+  <h1 class="blog_title margin_bottom_small"><a href="{{@blog.url}}">{ {{@blog.title}} }</a></h1>
+  <h4 class="text book">{{@blog.description}}</h4>
+  <div class="social border solid top_small bottom_small">
+    <h6 class="text book color c_black_medium padding_right_big"><a href="/about-me"><i class="fa fa-user"></i> <span class="desktop">About me</span></a></h6>
+    <h6 class="text book color c_black_medium padding_right_big"><a href="//es.linkedin.com/dreyacosta" target="_blank"><i class="fa fa-linkedin-square"></i> <span class="desktop">Linkedin</span></a></h6>
+    <h6 class="text book color c_black_medium padding_right_big"><a href="//twitter.com/dreyacosta" target="_blank"><i class="fa fa-twitter-square"></i> <span class="desktop">Twitter</span></a></h6>
+    <h6 class="text book color c_black_medium"><a href="//github.com/dreyacosta" target="_blank"><i class="fa fa-github"></i> <span class="desktop">GitHub</span></a></h6>
+  </div>
+</header>
+
+<main class="site_width" role="main">
+  <article class="{{post_class}}">
+
+    {{#post}}
+
+    <header class="text center margin_bottom_medium">
+      {{#if tags}}<h5 class="text book small uppercase color c_black_light margin_bottom_small">Posted in {{tags}}</h5>{{/if}}
+      <h1 class="margin_bottom_medium">{{{title}}}</h1>
+      <h5 class="text book small uppercase color c_black_light margin_bottom_small"><time datetime="{{date format='YYYY-MM-DD'}}">{{date format="dddd, MMMM DD, YYYY"}}</time></h5>
+    </header>
+
+    <section>
+      {{content}}
+    </section>
+
+    <section class="site_width text right margin_top_medium padding_top_small padding_bottom_small">
+      <h6 class="inline text book uppercase padding_right_small margin_bottom_small">Share this post</h6>
+
+      <a href="http://twitter.com/share?text={{title}}&url={{url absolute="true"}}" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+        <i class="fa fa-twitter"></i>
+      </a>
+
+      <a href="https://www.facebook.com/sharer/sharer.php?u={{url absolute="true"}}" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+        <i class="fa fa-facebook-square"></i>
+      </a>
+
+      <a href="https://plus.google.com/share?url={{url absolute="true"}}" onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+        <i class="fa fa-google-plus-square"></i>
+      </a>
+    </section>
+
+    <footer>
+      {{#if author}}
+      <section class="author_info">
+        <div class="alignleft border rad_circle" style="height: 87px; width: 87px; background-image: url({{author.image}}); background-size: cover;"></div>
+        <p class="margin_left_medium text small">Author</p>
+        <p class="margin_left_medium text bold"><a href="{{author.website}}">{{author.name}}</a></p>
+        <p class="margin_left_medium text small">{{author.bio}}</p>
+      </section>
+      {{/if}}
+    </footer>
+
+    {{/post}}
+
+    <div id="disqus_thread" class="margin_top_big"></div>
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'dreyacosta'; // required: replace example with your forum shortname
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    </article>
+</main>

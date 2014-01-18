@@ -1,0 +1,22 @@
+ol
+  margin 0 0 0 18px
+  ol
+    padding-top li_padding_top_bottom
+  ol > li:last-child
+    padding-bottom 0
+
+li
+  line-height paragraph_line_height
+  padding li_padding_top_bottom li_padding_right_left
+
+ul
+  > li, &.square li, &.circle li
+    margin 0 0 0 18px
+    ul
+      padding-top li_padding_top_bottom
+    ul > li:last-child
+      padding-bottom 0
+  &.square, &.square ul
+    list-style square
+  &.circle, &.circle ul
+    list-style circle

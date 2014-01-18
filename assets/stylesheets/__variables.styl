@@ -1,0 +1,242 @@
+// Font settings
+
+font_base = 'Droid Serif', 'serif'
+font_base_size = 22px
+font_base_weight = 300
+
+font_small = 0.8em
+font_large = 1.5em
+font_big = 2.5em
+
+font_book_weight = 300
+font_bold_weight = 700
+font_normal_weight = 400
+font_thin_weight = 100
+
+
+// Headings (h1, h2, h3, ...)
+
+heading_text_color = #434B4E
+heading_font_family = 'Open Sans'
+heading_font_weight = 700
+heading_line_height = 1.2em
+header_letter_spacing = -2px
+heading_margin = 0 0 25px 0
+
+
+// Logo, header and site width container
+
+logo_font_size = 1.8em
+
+header_line_height = 3em
+
+site_width = 700px
+
+
+// Paragraph (p), margins and padding settings
+
+paragraph_line_height = 1.5em
+paragraph_margin = 0 0 25px 0
+paragraph_right_left = 0
+
+margin_small = 10px
+margin_medium = 25px
+margin_big = 50px
+
+padding_small = 5px
+padding_medium = 12px
+padding_big = 30px
+
+
+// Borders (width and radius)
+
+border_small = 1px
+border_medium = 6px
+border_big = 10px
+
+border_radius_small = 5px
+border_radius_medium = 10px
+border_radius_big = 15px
+
+
+// Margin for images
+
+img_margin = 0 0 0 0
+
+
+// Links styles
+
+a_color = none
+a_text_decoration = none
+
+a_hover_color = #1784e4
+a_hover_text_decoration = none
+
+
+// Lists paddings
+
+li_padding_top_bottom = 10px
+li_padding_right_left = 0px
+
+
+// Shadow for text and box
+
+shadow_small = 1px 1px 2px
+shadow_medium = 10px 10px 20px
+shadow_big = 30px 30px 40px
+
+
+// If define creates (set to false to undefined):
+//   .width10 { width: 10%; }
+//   .height10 { height: 10%; }
+//   .columns2 { columns: 3; }
+
+widths_percentages = 10 20 70 80
+heights_percentages = 10 20
+
+columns_numbers = 1 2 3
+
+
+// Grid
+
+column_width = 100px
+gutter_width = 10px
+columns = 12 // max 16
+
+total_width = 100% // 100% to fluid grid
+
+numbers_columns = 1 2 3 4 5 6 7 8 9 10 11 12
+
+
+// Flexbox
+
+flex-version ?= box flex
+
+
+// Colors (Set var to false to not include classes)
+
+include_basic_colors = true
+
+black = black
+blue = #2D91EA
+green = #30AF7C
+orange = #f79035
+pink = #F33E6F
+red = #D95C5C
+yellow = #FFEA4D
+violet = #AD62B8
+white = white
+
+
+include_extra_colors = false
+
+stimulation = #434B4E
+rainy = #345065
+trackpants = #F7B448
+trunkocean = #4DB788
+pamda = #DD577A
+more = #49AEC0
+petal = #FE5A27
+puppy = #FFF0CF
+
+
+// More colors, feel stimulation to change (Set var to false to not include classes)
+
+include_mycolors = false
+
+mysauce1 = #ABCDCF
+mysauce2 = #345065
+mysauce3 = #233645
+mysauce4 = #F5FAFF
+
+
+// Black and white background with opacity
+
+include_opacity_backgrounds = false
+
+opacity_dark = rgba(0, 0, 0, 0.5)
+opacity_light = rgba(238, 238, 238, 0.5)
+
+
+// Colors degradation
+
+light = 80%
+medium = 20%
+dark = 10%
+
+black_light = lighten(black, light)
+blue_light = lighten(blue, light)
+green_light = lighten(green, light)
+orange_light = lighten(orange, light)
+
+red_light = lighten(red, light)
+yellow_light = lighten(yellow, light)
+pink_light = lighten(pink, light)
+violet_light = lighten(violet, light)
+
+stimulation_light = lighten(stimulation, light)
+rainy_light = lighten(rainy, light)
+trackpants_light = lighten(trackpants, light)
+trunkocean_light = lighten(trunkocean, light)
+
+more_light = lighten(more, light)
+pamda_light = lighten(pamda, light)
+petal_light = lighten(petal, light)
+puppy_light = lighten(puppy, light)
+
+mysauce1_light = lighten(mysauce1, light)
+mysauce2_light = lighten(mysauce2, light)
+mysauce3_light = lighten(mysauce3, light)
+mysauce4_light = lighten(mysauce4, light)
+
+
+black_medium = lighten(black, medium)
+blue_medium = lighten(blue, medium)
+green_medium = lighten(green, medium)
+orange_medium = lighten(orange, medium)
+
+red_medium = lighten(red, medium)
+yellow_medium = lighten(yellow, medium)
+pink_medium = lighten(pink, medium)
+violet_medium = lighten(violet, medium)
+
+stimulation_medium = lighten(stimulation, medium)
+rainy_medium = lighten(rainy, medium)
+trackpants_medium = lighten(trackpants, medium)
+trunkocean_medium = lighten(trunkocean, medium)
+
+more_medium = lighten(more, medium)
+pamda_medium = lighten(pamda, medium)
+petal_medium = lighten(petal, medium)
+puppy_medium = lighten(puppy, medium)
+
+mysauce1_medium = lighten(mysauce1, medium)
+mysauce2_medium = lighten(mysauce2, medium)
+mysauce3_medium = lighten(mysauce3, medium)
+mysauce4_medium = lighten(mysauce4, medium)
+
+
+black_dark = darken(black, dark)
+blue_dark = darken(blue, dark)
+green_dark = darken(green, dark)
+orange_dark = darken(orange, dark)
+
+red_dark = darken(red, dark)
+yellow_dark = darken(yellow, dark)
+pink_dark = darken(pink, dark)
+violet_dark = darken(violet, dark)
+
+stimulation_dark = darken(stimulation, dark)
+rainy_dark = darken(rainy, dark)
+trackpants_dark = darken(trackpants, dark)
+trunkocean_dark = darken(trunkocean, dark)
+
+more_dark = darken(more, dark)
+pamda_dark = darken(pamda, dark)
+petal_dark = darken(petal, dark)
+puppy_dark = darken(puppy, dark)
+
+mysauce1_dark = darken(mysauce1, dark)
+mysauce2_dark = darken(mysauce2, dark)
+mysauce3_dark = darken(mysauce3, dark)
+mysauce4_dark = darken(mysauce4, dark)
