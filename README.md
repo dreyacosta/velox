@@ -1,5 +1,5 @@
 # Velox
 
-Responsive theme for Ghost.
+Responsive and minimal theme for Ghost focus on speed, typography and semantic.
 
-Work in progress...
+See it in action: http://dreyacosta.com.
