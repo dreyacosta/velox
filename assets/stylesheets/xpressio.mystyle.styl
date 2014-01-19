@@ -7,14 +7,14 @@ article
     position relative
     left 50%
     transform(translateX(-50%))
+  > section > p > a
+    color rgb(32, 158, 197)
+
+pre, code
+  background rgb(240, 240, 240)
 
 pre
-  background rgb(240, 240, 240)
-  padding 10px
-
-code
-  padding 2px 10px
-  background rgb(240, 240, 240)
+  @extend .padding_medium
 
 .author_info
   font-family 'Open Sans'
@@ -31,3 +31,8 @@ code
 .social
   > h6
     display inline-block
+
+.pagination
+  @extend .text.center
+  > a
+   color rgb(32, 158, 197)

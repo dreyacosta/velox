@@ -274,7 +274,8 @@ small {
 .text.book {
   font-weight: 300;
 }
-.text.center {
+.text.center,
+.pagination {
   text-align: center;
 }
 .text.italic {
@@ -998,7 +999,8 @@ padding
 .padding_small {
   padding: 5px;
 }
-.padding_medium {
+.padding_medium,
+pre {
   padding: 12px;
 }
 .padding_big {
@@ -1105,12 +1107,11 @@ article > section > img {
   -o-transform: translateX(-50%);
   transform: translateX(-50%);
 }
-pre {
-  background: #f0f0f0;
-  padding: 10px;
+article > section > p > a {
+  color: #209ec5;
 }
+pre,
 code {
-  padding: 2px 10px;
   background: #f0f0f0;
 }
 .author_info {
@@ -1129,6 +1130,9 @@ code {
 }
 .social > h6 {
   display: inline-block;
+}
+.pagination > a {
+  color: #209ec5;
 }
 @media handheld, only screen and (max-width: 768px) {
   header.col1,
