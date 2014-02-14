@@ -86,6 +86,11 @@ html,
 body {
   width: 100%;
   height: 100%;
+  -webkit-font-smoothing: 'antialiased';
+  -moz-font-smoothing: 'antialiased';
+  -ms-font-smoothing: 'antialiased';
+  -o-font-smoothing: 'antialiased';
+  font-smoothing: 'antialiased';
 }
 html {
   font-family: 'Droid Serif', 'serif';
@@ -197,7 +202,7 @@ a:hover {
 blockquote {
   border-left: solid 10px #555;
   padding-left: 20px;
-  line-height: 1.5em;
+  line-height: 1.6em;
   margin: 0 0 25px 0;
 }
 blockquote:last-child {
@@ -244,7 +249,8 @@ h6:last-child {
 }
 p,
 dl {
-  line-height: 1.5em;
+  font-size: 0.9em;
+  line-height: 1.6em;
   margin: 0 0 25px 0;
 }
 p:last-child {
@@ -521,7 +527,7 @@ ol ol > li:last-child {
   padding-bottom: 0;
 }
 li {
-  line-height: 1.5em;
+  line-height: 1.6em;
   padding: 10px 0px;
 }
 ul > li,
