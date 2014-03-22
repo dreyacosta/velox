@@ -1,8 +1,39 @@
+// What module you want to include
+// (set true to include)
+
+xpressio_borders = true
+xpressio_colors = true
+xpressio_cursors = true
+xpressio_flex = false
+xpressio_font = true
+xpressio_form = true
+xpressio_grid = false
+xpressio_layout = true
+xpressio_list = true
+xpressio_margins = true
+xpressio_media = true
+xpressio_menu = false
+xpressio_modals = false
+xpressio_mymedia = true
+xpressio_mystyle = true
+xpressio_normalize = true
+xpressio_paddings = true
+xpressio_positions = true
+xpressio_table = true
+xpressio_tooltips = false
+xpressio_visibility = true
+
+
 // Font settings
 
+@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700)
+
 font_base = 'Droid Serif', 'serif'
+font_base_color = #434b4e
+font_base_letter_spacing = none
 font_base_size = 22px
 font_base_weight = 300
+font_base_smoothing = antialiased
 
 font_small = 0.8em
 font_large = 1.5em
@@ -16,11 +47,11 @@ font_thin_weight = 100
 
 // Headings (h1, h2, h3, ...)
 
-heading_text_color = #434B4E
+heading_text_color = inherit
 heading_font_family = 'Open Sans'
 heading_font_weight = 700
 heading_line_height = 1.2em
-header_letter_spacing = -2px
+header_letter_spacing = -.1rem
 heading_margin = 0 0 25px 0
 
 
@@ -28,14 +59,32 @@ heading_margin = 0 0 25px 0
 
 logo_font_size = 1.8em
 
-header_line_height = 3em
+header_line_height = 1em
 
 site_width = 700px
 
 
+// Blockquote
+
+blockquote_border_top = none
+blockquote_border_right = none
+blockquote_border_bottom = none
+blockquote_border_left = 10px
+
+blockquote_border_style = solid
+
+blockquote_border_color = rgb(85, 85, 85)
+
+blockquote_font_size = 1.2em
+
+blockquote_padding = 0 0 0 20px
+
+
 // Paragraph (p)
 
-paragraph_line_height = 1.6em
+paragraph_font_size = .85em
+paragraph_letter_spacing = .01rem
+paragraph_line_height = 1.65em
 paragraph_margin = 0 0 25px 0
 paragraph_right_left = 0
 
@@ -94,7 +143,7 @@ shadow_big = 30px 30px 40px
 //   .height10 { height: 10%; }
 //   .columns2 { columns: 3; }
 
-widths_percentages = 10 20 70 80
+widths_percentages = false
 heights_percentages = 10 20
 
 columns_numbers = 1 2 3
@@ -166,80 +215,3 @@ opacity_light = rgba(238, 238, 238, 0.5)
 light = 80%
 medium = 20%
 dark = 10%
-
-black_light = lighten(black, light)
-blue_light = lighten(blue, light)
-green_light = lighten(green, light)
-orange_light = lighten(orange, light)
-
-red_light = lighten(red, light)
-yellow_light = lighten(yellow, light)
-pink_light = lighten(pink, light)
-violet_light = lighten(violet, light)
-
-stimulation_light = lighten(stimulation, light)
-rainy_light = lighten(rainy, light)
-trackpants_light = lighten(trackpants, light)
-trunkocean_light = lighten(trunkocean, light)
-
-more_light = lighten(more, light)
-pamda_light = lighten(pamda, light)
-petal_light = lighten(petal, light)
-puppy_light = lighten(puppy, light)
-
-mysauce1_light = lighten(mysauce1, light)
-mysauce2_light = lighten(mysauce2, light)
-mysauce3_light = lighten(mysauce3, light)
-mysauce4_light = lighten(mysauce4, light)
-
-
-black_medium = lighten(black, medium)
-blue_medium = lighten(blue, medium)
-green_medium = lighten(green, medium)
-orange_medium = lighten(orange, medium)
-
-red_medium = lighten(red, medium)
-yellow_medium = lighten(yellow, medium)
-pink_medium = lighten(pink, medium)
-violet_medium = lighten(violet, medium)
-
-stimulation_medium = lighten(stimulation, medium)
-rainy_medium = lighten(rainy, medium)
-trackpants_medium = lighten(trackpants, medium)
-trunkocean_medium = lighten(trunkocean, medium)
-
-more_medium = lighten(more, medium)
-pamda_medium = lighten(pamda, medium)
-petal_medium = lighten(petal, medium)
-puppy_medium = lighten(puppy, medium)
-
-mysauce1_medium = lighten(mysauce1, medium)
-mysauce2_medium = lighten(mysauce2, medium)
-mysauce3_medium = lighten(mysauce3, medium)
-mysauce4_medium = lighten(mysauce4, medium)
-
-
-black_dark = darken(black, dark)
-blue_dark = darken(blue, dark)
-green_dark = darken(green, dark)
-orange_dark = darken(orange, dark)
-
-red_dark = darken(red, dark)
-yellow_dark = darken(yellow, dark)
-pink_dark = darken(pink, dark)
-violet_dark = darken(violet, dark)
-
-stimulation_dark = darken(stimulation, dark)
-rainy_dark = darken(rainy, dark)
-trackpants_dark = darken(trackpants, dark)
-trunkocean_dark = darken(trunkocean, dark)
-
-more_dark = darken(more, dark)
-pamda_dark = darken(pamda, dark)
-petal_dark = darken(petal, dark)
-puppy_dark = darken(puppy, dark)
-
-mysauce1_dark = darken(mysauce1, dark)
-mysauce2_dark = darken(mysauce2, dark)
-mysauce3_dark = darken(mysauce3, dark)
-mysauce4_dark = darken(mysauce4, dark)

@@ -25,13 +25,15 @@ body *
 html, body
   width 100%
   height 100%
-  vendor('font-smoothing', antialiased)
 
 html
+  color font_base_color
   font-family font_base
-  text-size(100%)
   font-size font_base_size
   font-weight font_base_weight
+  letter-spacing font_base_letter_spacing
+  text-size(100%)
+  vendor('font-smoothing', font_base_smoothing)
 
 article,aside,details,figcaption,figure,
 footer,header,hgroup,menu,nav,section
@@ -54,7 +56,6 @@ q:before, q:after
 a
   color inherit
   text-decoration none
-  transition(color ease 0.3s)
 
 ins
   background-color #ff9
@@ -96,7 +97,7 @@ hr
   display block
   height 1px
   border 0
-  border-top 1px solid #cccccc
+  border-top 1px solid rgba(0,0,0,0.1)
   margin 1em 0
   padding 0
 

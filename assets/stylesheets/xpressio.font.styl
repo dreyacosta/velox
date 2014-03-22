@@ -7,8 +7,14 @@ a:hover
   text-decoration a_hover_text_decoration
 
 blockquote
-  border-left solid 10px rgb(85, 85, 85)
-  padding-left 20px
+  border-top-width blockquote_border_top
+  border-right-width blockquote_border_right
+  border-bottom-width blockquote_border_bottom
+  border-left-width blockquote_border_left
+  border-style blockquote_border_style
+  border-color blockquote_border_color
+  font-size blockquote_font_size
+  padding blockquote_padding
   line-height paragraph_line_height
   margin paragraph_margin
 
@@ -19,9 +25,9 @@ h1, h2, h3, h4, h5, h6
   color heading_text_color
   font-family heading_font_family
   font-weight heading_font_weight
-  line-height heading_line_height
-  letter-spacing header_letter_spacing
   margin heading_margin
+  letter-spacing header_letter_spacing
+  line-height heading_line_height
 
 h1
   font-size 2.5rem
@@ -50,7 +56,8 @@ h6:last-child
   margin-bottom 0
 
 p, dl
-  font-size .9em
+  font-size paragraph_font_size
+  letter-spacing paragraph_letter_spacing
   line-height paragraph_line_height
   margin paragraph_margin
 
@@ -95,3 +102,12 @@ small
     text-transform uppercase
   &.right
     text-align right
+  &.shadow_small
+    text-shadow shadow_small rgba(0,0,0,0.5)
+  &.shadow_medium
+    text-shadow shadow_medium rgba(0,0,0,0.5)
+  &.shadow_big
+    text-shadow shadow_big rgba(0,0,0,0.5)
+
+.logo
+  font-size logo_font_size
