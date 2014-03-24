@@ -27,25 +27,9 @@
       {{content}}
     </section>
 
-    <section class="site_width text right margin_top_medium padding_top_small padding_bottom_small">
-      <h6 class="inline text book uppercase padding_right_small margin_bottom_small">Share this post</h6>
-
-      <a href="http://twitter.com/share?text={{title}}&url={{url absolute="true"}}" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
-        <i class="fa fa-twitter"></i>
-      </a>
-
-      <a href="https://www.facebook.com/sharer/sharer.php?u={{url absolute="true"}}" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
-        <i class="fa fa-facebook-square"></i>
-      </a>
-
-      <a href="https://plus.google.com/share?url={{url absolute="true"}}" onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
-        <i class="fa fa-google-plus-square"></i>
-      </a>
-    </section>
-
     <footer>
       {{#if author}}
-      <section class="author_info">
+      <section class="author_info margin_top_big">
         <div class="alignleft border rad_circle" style="height: 87px; width: 87px; background-image: url({{author.image}}); background-size: cover;"></div>
         <p class="margin_left_medium text small">Author</p>
         <p class="margin_left_medium text bold"><a href="{{author.website}}">{{author.name}}</a></p>
