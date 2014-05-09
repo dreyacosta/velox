@@ -4,13 +4,12 @@ Responsive and minimal theme for Ghost focus on speed, typography and semantic.
 
 See it in action: http://dreyacosta.com.
 
-### Optional set up
+## Optional set up
 
-+ Google Analytics
+### Google Analytics
 
-*default.hbs*: uncomment `{{!> google-analytics}}` to `{{> google-analytics}}`
+**default.hbs**: uncomment `{{!> google-analytics}}` to `{{> google-analytics}}`
 ```
-...
 {{!
   Here, you can add Google Analytics.
   Also go to partials/google-analytics.hbs to set your ID and DOMAIN.
@@ -18,7 +17,7 @@ See it in action: http://dreyacosta.com.
 {{> google-analytics}}
 ```
 
-*partials/google-analytics.hbs*: set your `TRACK-ID` and `DOMAIN.com`
+**partials/google-analytics.hbs**: set your `TRACK-ID` and `DOMAIN.com`
 ```
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -31,9 +30,11 @@ See it in action: http://dreyacosta.com.
 </script>
 ```
 
-+ Disqus comments
+---
 
-*post.hbs*: uncomment `{{!> disqus-comment}}` to `{{> disqus-comment}}`
+### Disqus comments
+
+**post.hbs**: uncomment `{{!> disqus-comment}}` to `{{> disqus-comment}}`
 ```
 {{!
   Here, you can add disqus comment.
@@ -42,7 +43,7 @@ See it in action: http://dreyacosta.com.
 {{!> disqus-comment}}
 ```
 
-*partials/disqus-comment.hbs*: set your `disqus_shortname`
+**partials/disqus-comment.hbs**: set your `disqus_shortname`
 ```
 <div id="disqus_thread" class="margin_top_big"></div>
 <script type="text/javascript">
