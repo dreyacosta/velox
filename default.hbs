@@ -11,17 +11,15 @@
   <meta name="MobileOptimized" content="320" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <meta name="google-site-verification" content="DszJY_XwNlfAuWHZWUXSMBE95aATom8vd4b14bMT-5I" />
-
   {{#post}}
 
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="{{{title}}}">
   <meta name="twitter:description" content="{{excerpt}}">
-  <meta name="twitter:creator" content="@dreyacosta">
-  <meta name="twitter:image" content="http://dreyacosta.com{{@blog.logo}}">
-  <meta name="twitter:url" content="http://dreyacosta.com{{url}}">
-  <meta name="twitter:domain" content="dreyacosta.com">
+  <meta name="twitter:creator" content="@yourTwitterUsername">
+  <meta name="twitter:image" content="{{@blog.logo}}">
+  <meta name="twitter:url" content="{{url absolute='true'}}">
+  <meta name="twitter:domain" content="{{@blog.url}}">
 
   {{/post}}
 
@@ -46,14 +44,10 @@
     <h5 class="text book small">Proudly published with <a href="http://ghost.org"><span>Ghost</span></a></h5>
   </footer>
 
-  <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-    ga('create', 'UA-8068556-1', 'dreyacosta.com');
-    ga('send', 'pageview');
-  </script>
+  {{!
+    Here, you can add Google Analytics.
+    Also go to partials/google-analytics.hbs to set your ID and DOMAIN.
+  }}
+  {{!> google-analytics}}
 </body>
 </html>
