@@ -6,6 +6,17 @@ See it in action: http://dreyacosta.com.
 
 ## Optional set up
 
+### Nav menu
+
+**index.hbs**, **page.hbs** and **post.hbs**: customize your nav menu
+```
+{{!
+  Here, you can add your nav menu.
+  Also go to partials/nav-menu.hbs to set your links.
+}}
+{{> nav-menu}}
+```
+
 ### Google Analytics
 
 **default.hbs**: uncomment `{{!> google-analytics}}` to `{{> google-analytics}}`
@@ -34,7 +45,7 @@ See it in action: http://dreyacosta.com.
 
 ### Disqus comments
 
-**post.hbs**: uncomment `{{!> disqus-comment}}` to `{{> disqus-comment}}`
+**page.hbs** and **post.hbs**: uncomment `{{!> disqus-comment}}` to `{{> disqus-comment}}`
 ```
 {{!
   Here, you can add disqus comment.
