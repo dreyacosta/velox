@@ -562,6 +562,7 @@ ol > li {
 }
 li {
   padding: 10px 0px;
+  font-size: 0.85em;
 }
 ul {
   margin: 0 0 25px 0;
