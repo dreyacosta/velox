@@ -1,59 +1,58 @@
 <!DOCTYPE html>
-<html itemscope itemtype="http://schema.org/Blog">
-<head>
-  <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-  <title>{{meta_title}}</title>
-  <meta name="description" content="{{meta_description}}" />
+    <title>{{meta_title}}</title>
+    <meta name="description" content="{{meta_description}}" />
 
-  <meta name="HandheldFriendly" content="True" />
-  <meta name="MobileOptimized" content="320" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="MobileOptimized" content="320" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  {{#post}}
+    {{!
+      Here, you can add authorship.
+      Using authorship helps searchers discover great information by highlighting
+      content from authors who they might find interesting.
+      https://plus.google.com/authorship
+    }}
+    {{! <link rel="author" href="//plus.google.com/YOUR-ID?rel=author" /> }}
 
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="{{{title}}}">
-  <meta name="twitter:description" content="{{excerpt}}">
-  <meta name="twitter:creator" content="@yourTwitterUsername">
-  <meta name="twitter:image" content="{{@blog.logo}}">
-  <meta name="twitter:url" content="{{url absolute='true'}}">
-  <meta name="twitter:domain" content="{{@blog.url}}">
+    <link rel="shortcut icon" href="{{asset "favicon.ico"}}">
 
-  {{/post}}
+    <link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" />
+    <link rel='stylesheet' type='text/css' href='//fonts.googleapis.com/css?family=Droid+Serif|Raleway:700,800,900' />
 
-  {{!
-    Here, you can add authorship.
-    Using authorship helps searchers discover great information by highlighting
-    content from authors who they might find interesting.
-    https://plus.google.com/authorship
-  }}
-  {{! <link rel="author" href="https://plus.google.com/YOUR-ID?rel=author" /> }}
+    <link rel="stylesheet" type="text/css" href="{{asset "css/xpressio.theme.velox.css"}}" />
 
-  <link rel="shortcut icon" href="/favicon.ico">
+    {{#post}}
 
-  <link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" />
-  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Droid+Serif" />
-  <link rel='stylesheet' type='text/css' href="//fonts.googleapis.com/css?family=Open+Sans:600,300" />
-  <link rel="stylesheet" type="text/css" href="/assets/stylesheets/xpressio.css" />
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="{{{title}}}">
+    <meta name="twitter:description" content="{{excerpt}}">
+    <meta name="twitter:creator" content="@yourTwitterUsername">
+    <meta name="twitter:image" content="{{@blog.logo}}">
+    <meta name="twitter:url" content="{{url absolute='true'}}">
+    <meta name="twitter:domain" content="{{@blog.url}}">
 
-  {{ghost_head}}
-</head>
-<body>
+    {{/post}}
 
-  {{{body}}}
+    {{ghost_head}}
+  </head>
+  <body>
+    {{{body}}}
 
-  <footer class="blog_info margin_top_big padding_medium text center">
-    <h5 class="text book small">&copy; {{date format="YYYY"}} <a href="/">{{@blog.title}}</a>. All rights reserved.</h5>
-    <h5 class="text book small"><a href="https://github.com/dreyacosta/velox" target="_blank" class="text bold">Velox theme</a> by <a href="http://dreyacosta.com/">David Rey</a></h5>
-    <h5 class="text book small">Proudly published with <a href="http://ghost.org"><span>Ghost</span></a></h5>
-  </footer>
+    <footer>
+      <h5>&copy; {{date format="YYYY"}} <a href="/">{{@blog.title}}</a>. All rights reserved.</h5>
+      <h5><a href="https://github.com/dreyacosta/velox" target="_blank">Velox theme</a> by <a href="http://dreyacosta.com/">David Rey</a></h5>
+      <h5>Proudly published with <a href="http://ghost.org"><span>Ghost</span></a></h5>
+    </footer>
 
-  {{!
-    Here, you can add Google Analytics.
-    Also go to partials/google-analytics.hbs to set your ID and DOMAIN.
-  }}
-  {{!> google-analytics}}
-</body>
+    {{!
+      Here, you can add Google Analytics.
+      Also go to partials/google-analytics.hbs to set your ID and DOMAIN.
+    }}
+    {{!> google-analytics}}
+  </body>
 </html>
