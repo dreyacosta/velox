@@ -22,7 +22,7 @@
     <link rel="shortcut icon" href="{{asset "favicon.ico"}}">
 
     <link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" />
-    <link rel='stylesheet' type='text/css' href='//fonts.googleapis.com/css?family=Droid+Serif|Raleway:700,800,900' />
+    <link rel='stylesheet' type='text/css' href='//fonts.googleapis.com/css?family=Droid+Serif|Raleway:300,700,800,900' />
 
     <link rel="stylesheet" type="text/css" href="{{asset "css/xpressio.theme.velox.css"}}" />
 
@@ -43,10 +43,10 @@
   <body>
     {{{body}}}
 
-    <footer>
-      <h5>&copy; {{date format="YYYY"}} <a href="/">{{@blog.title}}</a>. All rights reserved.</h5>
-      <h5><a href="https://github.com/dreyacosta/velox" target="_blank">Velox theme</a> by <a href="http://dreyacosta.com/">David Rey</a></h5>
-      <h5>Proudly published with <a href="http://ghost.org"><span>Ghost</span></a></h5>
+    <footer class="site-footer text center padding">
+      <div>&copy; {{date format="YYYY"}} <a href="/">{{@blog.title}}</a>. All rights reserved.</div>
+      <div><a href="https://github.com/dreyacosta/velox" target="_blank">Velox theme</a> by <a href="http://dreyacosta.com/">David Rey</a></div>
+      <div>Proudly published with <a href="http://ghost.org"><span>Ghost</span></a></div>
     </footer>
 
     {{!
