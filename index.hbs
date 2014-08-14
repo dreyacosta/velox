@@ -1,32 +1,7 @@
 {{!< default}}
 
-<header class="site_width text center padding_top_big margin_bottom_big">
-  {{#if @blog.logo}}<a href="{{@blog.url}}"><div style="background: url({{@blog.logo}})"></div></a>{{/if}}
-  <h1 class="blog_title margin_bottom_small"><a href="{{@blog.url}}">{{@blog.title}}</a></h1>
-  <h4 class="text book">{{@blog.description}}</h4>
-  {{!
-    Here, you can add your nav menu.
-    Also go to partials/nav-menu.hbs to set your links.
-  }}
-  {{> nav-menu}}
-</header>
+{{> "header"}}
 
 <main class="site_width" role="main">
-  {{#foreach posts}}
-
-  <article class="margin_bottom_big">
-    <header class="text center margin_bottom_medium">
-      <h1 class"margin_bottom_medium"><a href="{{url}}">{{{title}}}</a></h1>
-      <h5 class="text book small uppercase color c_black_light margin_bottom_small"><time datetime="{{date format='YYYY-MM-DD'}}">{{date format="dddd, MMMM DD, YYYY"}}</time></h5>
-    </header>
-
-    <section class="post-excerpt">
-      <p>{{excerpt}}&hellip;</p>
-      <h5><a class="text book small uppercase color c_blue" href="{{url}}">Read this article <i class="fa fa-chevron-circle-right"></i></a></h5>
-    </section>
-  </article>
-
-  {{/foreach}}
-
-  {{pagination}}
+  {{> "loop"}}
 </main>
