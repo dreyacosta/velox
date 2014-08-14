@@ -1,0 +1,28 @@
+{{#foreach posts}}
+
+<article class="padding">
+  <header class="excerpt">
+    <h4><a href="{{url}}">{{{title}}}</a></h4>
+  </header>
+
+  <section>
+    <p>{{excerpt words="30"}} <a href="{{url}}">&raquo;</a></p>
+    {{!-- <h5><a href="{{url}}">Read this article <i class="fa fa-chevron-circle-right"></i></a></h5> --}}
+  </section>
+
+  <footer class="author relative">
+    <div class="author-thumb">
+      {{#if author.image}}<img src="{{author.image}}" alt="Author image" nopin="nopin" class="border circle" />{{/if}}
+    </div>
+
+    <div class="author-info align vertical">
+      {{author}}
+      {{tags prefix=" on "}}
+      <time datetime="{{date format='YYYY-MM-DD'}}">{{date format="dddd, MMMM DD, YYYY"}}</time>
+    </div>
+  </footer>
+</article>
+
+{{/foreach}}
+
+{{pagination}}
