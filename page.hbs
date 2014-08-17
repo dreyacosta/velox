@@ -1,25 +1,16 @@
 {{!< default}}
 
-<header class="site_width text center padding_top_big margin_bottom_big">
-  {{#if @blog.logo}}<a href="{{@blog.url}}"><div style="background: url({{@blog.logo}})"></div></a>{{/if}}
-  <h1 class="blog_title margin_bottom_small"><a href="{{@blog.url}}">{{@blog.title}}</a></h1>
-  <h4 class="text book">{{@blog.description}}</h4>
-  {{!
-    Here, you can add your nav menu.
-    Also go to partials/nav-menu.hbs to set your links.
-  }}
-  {{> nav-menu}}
-</header>
+{{> "header"}}
 
 <main class="site_width" role="main">
   <article class="{{post_class}}">
 
     {{#post}}
 
-    <header class="text center margin_bottom_medium">
-      {{#if tags}}<h5 class="text book small uppercase color c_black_light margin_bottom_small">Posted in {{tags}}</h5>{{/if}}
-      <h1 class="margin_bottom_medium">{{{title}}}</h1>
-      <h5 class="text book small uppercase color c_black_light margin_bottom_small"><time datetime="{{date format='YYYY-MM-DD'}}">{{date format="dddd, MMMM DD, YYYY"}}</time></h5>
+    <header>
+      {{#if tags}}<h5>Posted in {{tags}}</h5>{{/if}}
+      <h1>{{{title}}}</h1>
+      <h5><time datetime="{{date format='YYYY-MM-DD'}}">{{date format="dddd, MMMM DD, YYYY"}}</time></h5>
     </header>
 
     <section>
@@ -28,11 +19,11 @@
 
     <footer>
       {{#if author}}
-      <section class="author_info margin_top_big">
-        <div class="alignleft border rad_circle" style="height: 87px; width: 87px; background-image: url({{author.image}}); background-size: cover;"></div>
-        <p class="margin_left_medium text small">Author</p>
-        <p class="margin_left_medium text bold"><a href="{{author.website}}">{{author.name}}</a></p>
-        <p class="margin_left_medium text small">{{author.bio}}</p>
+      <section>
+        <div style="background-image: url({{author.image}}); background-size: cover;"></div>
+        <p>Author</p>
+        <p><a href="{{author.website}}">{{author.name}}</a></p>
+        <p>{{author.bio}}</p>
       </section>
       {{/if}}
     </footer>
