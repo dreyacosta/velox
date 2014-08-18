@@ -2,7 +2,9 @@
 
 Responsive and minimal theme for Ghost focus on speed, typography and semantic.
 
-See it in action: http://dreyacosta.com.
+First velox 0.2.0 preview
+
+![velox 0.2.0](https://raw.githubusercontent.com/dreyacosta/velox/ghost-0.5.0/velox-0.2.0-preview.jpg)
 
 ## Optional set up
 
@@ -40,8 +42,6 @@ See it in action: http://dreyacosta.com.
   ga('send', 'pageview');
 </script>
 ```
-
----
 
 ### Disqus comments
 
