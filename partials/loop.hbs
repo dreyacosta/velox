@@ -16,9 +16,11 @@
     </div>
 
     <div class="author-info align vertical">
+      <div>
+        <time datetime="{{date format='YYYY-MM-DD'}}">{{date format="dddd, MMMM DD, YYYY"}}</time>
+      </div>
       {{author}}
       {{tags prefix=" on "}}
-      <time datetime="{{date format='YYYY-MM-DD'}}">{{date format="dddd, MMMM DD, YYYY"}}</time>
     </div>
   </footer>
 </article>
