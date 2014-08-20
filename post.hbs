@@ -8,10 +8,8 @@
     {{#post}}
 
     <header class="post-header">
-      {{!-- {{#if tags}}<h5>Posted in {{tags}}</h5>{{/if}} --}}
       <h1>{{{title}}}</h1>
       <time datetime="{{date format='YYYY-MM-DD'}}">{{date format="dddd, MMMM DD, YYYY"}}</time>
-      {{!-- <h5><time datetime="{{date format='YYYY-MM-DD'}}">{{date format="dddd, MMMM DD, YYYY"}}</time></h5> --}}
     </header>
 
     <section class="margin_bottom">
@@ -20,14 +18,18 @@
 
     <footer class="author-post relative">
       {{#if author}}
-      <div class="author-thumb">
-        {{#if author.image}}<img src="{{author.image}}" alt="Author image" nopin="nopin" class="border circle" />{{/if}}
-      </div>
 
-      <div class="author-info align vertical">
+      {{#if author.image}}
+      <div class="author-thumb inline middle">
+        <img src="{{author.image}}" alt="Author image" nopin="nopin" class="border circle" />
+      </div>
+      {{/if}}
+
+      <div class="inline middle align vertical">
         <div><a href="{{website}}">{{author}}</a></div>
         <div>{{author.bio}}</div>
       </div>
+
       {{/if}}
     </footer>
 
