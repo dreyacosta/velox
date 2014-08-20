@@ -10,17 +10,17 @@
     {{!-- <h5><a href="{{url}}">Read this article <i class="fa fa-chevron-circle-right"></i></a></h5> --}}
   </section>
 
-  <footer class="author relative">
-    <div class="author-thumb">
-      {{#if author.image}}<img src="{{author.image}}" alt="Author image" nopin="nopin" class="border circle" />{{/if}}
+  <footer class="author">
+    {{#if author.image}}
+    <div class="author-thumb inline middle">
+      <img src="{{author.image}}" alt="Foo" nopin="nopin" class="border circle" />
     </div>
+    {{/if}}
 
-    <div class="author-info align vertical">
-      <div>
-        <time datetime="{{date format='YYYY-MM-DD'}}">{{date format="dddd, MMMM DD, YYYY"}}</time>
-      </div>
+    <div class="inline middle">
       {{author}}
       {{tags prefix=" on "}}
+      <time datetime="{{date format='YYYY-MM-DD'}}">{{date format="dddd, MMMM DD, YYYY"}}</time>
     </div>
   </footer>
 </article>
