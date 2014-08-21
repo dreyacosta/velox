@@ -5,15 +5,14 @@
     <h4><a href="{{url}}">{{{title}}}</a></h4>
   </header>
 
-  <section>
+  <div>
     <p>{{excerpt words="30"}} <a href="{{url}}">&raquo;</a></p>
-    {{!-- <h5><a href="{{url}}">Read this article <i class="fa fa-chevron-circle-right"></i></a></h5> --}}
-  </section>
+  </div>
 
   <footer class="author">
     {{#if author.image}}
     <div class="author-thumb inline middle">
-      <img src="{{author.image}}" alt="Foo" nopin="nopin" class="border circle" />
+      <img src="{{author.image}}" alt="Foo" class="border circle" />
     </div>
     {{/if}}
 
