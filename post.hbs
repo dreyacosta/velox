@@ -12,9 +12,9 @@
       <time datetime="{{date format='YYYY-MM-DD'}}">{{date format="dddd, MMMM DD, YYYY"}}</time>
     </header>
 
-    <section class="margin_bottom">
+    <div class="margin_bottom">
       {{content}}
-    </section>
+    </div>
 
     <footer class="author-post relative">
       {{#if author}}
@@ -26,7 +26,7 @@
       {{/if}}
 
       <div class="inline middle align vertical">
-        <div><a href="{{website}}">{{author}}</a></div>
+        <div>{{author}}</div>
         <div>{{author.bio}}</div>
       </div>
 
