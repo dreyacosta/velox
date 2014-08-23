@@ -8,7 +8,7 @@
     </nav>
     <div class="author-meta site_width">
       <h1>{{name}}</h1>
-      <p class="blog-description">{{bio}}</p>
+      {{#if bio}}<p class="blog-description">{{bio}}</p>{{/if}}
       {{#if location}}<p class="author-location text small">{{location}}</p>{{/if}}
       {{#if website}}<p class="author-link text small bold"><a href="{{website}}">{{website}}</a></p>{{/if}}
     </div>
