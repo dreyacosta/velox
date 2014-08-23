@@ -1,0 +1,21 @@
+{{!< default}}
+
+<header class="main-header text center">
+{{#author}}
+  <div class="no-cover site_width padding border solid bottom">
+    <nav>
+      {{#if image}}<img src="{{image}}" alt="{{name}}" class="blog-logo center border circle" />{{/if}}
+    </nav>
+    <div class="author-meta site_width">
+      <h1>{{name}}</h1>
+      <p class="blog-description">{{bio}}</p>
+      {{#if location}}<p class="author-location text small">{{location}}</p>{{/if}}
+      {{#if website}}<p class="author-link text small bold"><a href="{{website}}">{{website}}</a></p>{{/if}}
+    </div>
+  </div>
+{{/author}}
+</header>
+
+<main class="site_width" role="main">
+  {{> "loop"}}
+</main>
