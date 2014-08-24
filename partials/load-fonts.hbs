@@ -1,0 +1,14 @@
+<script>
+  var cb = function() {
+    var createLink = function(source) {
+      var l = document.createElement('link'); l.rel = 'stylesheet';
+      l.href = source;
+      var h = document.getElementsByTagName('head')[0]; h.appendChild(l, h);
+    };
+    createLink('//fonts.googleapis.com/css?family=Droid+Serif%7CRaleway:300,700,800,900');
+  };
+
+  var raf = requestAnimationFrame || mozRequestAnimationFrame ||
+      webkitRequestAnimationFrame || msRequestAnimationFrame;
+  if (raf) { raf(cb); } else { window.addEventListener('load', cb); }
+</script>
