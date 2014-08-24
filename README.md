@@ -11,6 +11,14 @@ Test made with Google Analytics and Prism scripts on a page without images.
 
 ![PageSpeed Desktop](https://raw.githubusercontent.com/dreyacosta/velox/ghost-0.5.0/screenshots/pagespeed-desktop.jpg)
 
+## W3C validation
+
+![W3C Home validation](https://raw.githubusercontent.com/dreyacosta/velox/ghost-0.5.0/screenshots/w3c-markup-home.jpg)
+
+![W3C Author validation](https://raw.githubusercontent.com/dreyacosta/velox/ghost-0.5.0/screenshots/w3c-markup-author.jpg)
+
+![W3C Tag validation](https://raw.githubusercontent.com/dreyacosta/velox/ghost-0.5.0/screenshots/w3c-markup-tag.jpg)
+
 ## Optional set up
 
 #### Google Analytics
