@@ -1,0 +1,13 @@
+<script>
+  (function() {
+    var l = document.createElement('script'); l.type = 'text/javascript'; l.async = true;
+    l.src = '{{asset "lib/prism/prism.js"}}';
+    var h = document.getElementsByTagName('head')[0]; h.appendChild(l, h);
+  }());
+
+  var highlightAll = function() {
+    Prism.highlightAll();
+  };
+
+  window.addEventListener('load', highlightAll);
+</script>
