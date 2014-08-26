@@ -2,31 +2,18 @@
 
 {{> "header"}}
 
-<main class="site_width" role="main">
+<main class="site_width padding" role="main">
   <article class="{{post_class}}">
 
     {{#post}}
 
-    <header>
-      {{#if tags}}<h5>Posted in {{tags}}</h5>{{/if}}
+    <header class="post-header">
       <h1>{{{title}}}</h1>
-      <h5><time datetime="{{date format='YYYY-MM-DD'}}">{{date format="dddd, MMMM DD, YYYY"}}</time></h5>
     </header>
 
-    <section>
+    <div>
       {{content}}
-    </section>
-
-    <footer>
-      {{#if author}}
-      <section>
-        <div style="background-image: url({{author.image}}); background-size: cover;"></div>
-        <p>Author</p>
-        <p><a href="{{author.website}}">{{author.name}}</a></p>
-        <p>{{author.bio}}</p>
-      </section>
-      {{/if}}
-    </footer>
+    </div>
 
     {{/post}}
 
@@ -35,5 +22,5 @@
       Also go to partials/disqus-comment to set your SHORTNAME.
     }}
     {{!> disqus-comment}}
-    </article>
+  </article>
 </main>
