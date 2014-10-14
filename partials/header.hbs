@@ -5,10 +5,8 @@
     <div class="cover-mask padding">
       {{#if @blog.logo}}
       <nav>
-        <a href="{{@blog.url}}">
-          <div class="inline blog-logo-extra-border border circle">
-            <img src="{{@blog.logo}}" alt="{{@blog.title}}" class="blog-logo center border circle" />
-          </div>
+        <a href="{{@blog.url}}" class="inline blog-logo-extra-border border circle">
+          <img src="{{@blog.logo}}" alt="{{@blog.title}}" class="blog-logo center border circle" />
         </a>
       </nav>
       {{/if}}
@@ -18,6 +16,9 @@
       </div>
     </div>
 
+    {{!
+      Here, you can add social icons.
+    }}
     {{> "social"}}
   </div>
 
@@ -26,10 +27,8 @@
   <div class="no-cover site_width padding border solid bottom">
     {{#if @blog.logo}}
     <nav>
-      <a href="{{@blog.url}}">
-        <div class="inline blog-logo-extra-border border circle">
-          <img src="{{@blog.logo}}" alt="{{@blog.title}}" class="blog-logo center border circle" />
-        </div>
+      <a href="{{@blog.url}}" class="inline blog-logo-extra-border border circle">
+        <img src="{{@blog.logo}}" alt="{{@blog.title}}" class="blog-logo center border circle" />
       </a>
     </nav>
     {{/if}}
@@ -38,6 +37,9 @@
       <p class="blog-description">{{@blog.description}}</p>
     </div>
 
+    {{!
+      Here, you can add social icons.
+    }}
     {{> "social"}}
   </div>
 
