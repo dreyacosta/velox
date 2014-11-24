@@ -27,7 +27,7 @@ You can customize CSS with [xpressio](https://github.com/dreyacosta/xpressio) fr
 ## Optional set up
 
 #### Google Analytics
-default.hbs line 54:
+default.hbs line 42:
 ```
 {{> google-analytics}}
 ```
@@ -37,7 +37,7 @@ ga('create', 'YOUR-TRACK-ID', 'yourdomain.com');
 ```
 
 #### Disqus
-post.hbs line 42:
+post.hbs line 68:
 ```
 {{> disqus-comment}}
 ```
@@ -52,20 +52,14 @@ default.hbs line 19:
 <link rel="author" href="//plus.google.com/YOUR-ID?rel=author" />
 ```
 
-#### Twitter cards
-default.hbs line 28:
-```
-<meta name="twitter:creator" content="@yourTwitterUsername">
-```
-
 #### Fonts
-default.hbs line 48:
+default.hbs line 36:
 ```
 {{> load-fonts}}
 ```
 
 #### Prism syntax highlighter
-default.hbs line 49:
+default.hbs line 37:
 ```
 {{> load-prism}}
 ```
