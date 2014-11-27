@@ -9,7 +9,7 @@
     <div class="cover-mask">
       <div class="blog-info">
         <div class="author">
-          <img src="{{author.image}}" alt="Author image" class="border circle inline" />
+          {{#if author.image}}<img src="{{author.image}}" alt="Author image" class="border circle inline" />{{/if}}
           <div class="inline">{{author}}</div>
         </div>
 
