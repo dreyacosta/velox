@@ -9,7 +9,6 @@
     createLink('//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css');
   };
 
-  var raf = requestAnimationFrame || mozRequestAnimationFrame ||
-      webkitRequestAnimationFrame || msRequestAnimationFrame;
+  var raf = requestAnimationFrame || mozRequestAnimationFrame || webkitRequestAnimationFrame || msRequestAnimationFrame;
   if (raf) { raf(cb); } else { window.addEventListener('load', cb); }
 </script>
