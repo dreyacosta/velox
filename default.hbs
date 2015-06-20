@@ -25,7 +25,7 @@
 
     <link rel="shortcut icon" href="{{asset "favicon.ico"}}">
 
-    <link rel="stylesheet" type="text/css" href="{{asset "css/velox.css"}}">
+    <link rel="stylesheet" type="text/css" href="{{asset "stylesheets/velox.css"}}">
 
     {{ghost_head}}
   </head>
@@ -38,8 +38,13 @@
       <div>Proudly published with <a href="http://ghost.org"><span>Ghost</span></a></div>
     </footer>
 
-    {{> load-fonts}}
-    {{> load-prism}}
-    {{> load-lazycover}}
+    {{> loaders/load-fonts}}
+    {{> loaders/load-prism}}
+    {{> loaders/load-lazycover}}
+    {{!
+      Here, you can add Google Analytics.
+      Also go to partials/google-analytics.hbs to set your ID and DOMAIN.
+    }}
+    {{!> loaders/load-google-analytics}}
   </body>
 </html>
