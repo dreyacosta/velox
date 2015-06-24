@@ -3,70 +3,65 @@
 {{#post}}
 
 {{#if image}}
-
-<header>
-  <div class="cover" style="background-image: url({{image}})">
-    <div class="cover-mask">
-      <div class="blog-info">
-        <div class="author">
-          {{#if author.image}}<img src="{{author.image}}" alt="Author image" class="border circle inline" />{{/if}}
-          <div class="inline">{{author}}</div>
-        </div>
-
-        <div class="title"><a class="text bold" href="{{@blog.url}}">{{@blog.title}}</a></div>
-      </div>
-
-      <div class="post-cover site_width site_width padding">
-        <h1>{{{title}}}</h1>
-        <time datetime="{{date format='YYYY-MM-DD'}}">{{date format="dddd, MMMM DD, YYYY"}}</time>
-      </div>
-    </div>
-  </div>
-</header>
-
+{{> "header-post-cover"}}
 {{else}}
-
-{{> "header"}}
-
+{{> "header-blog-post"}}
 {{/if}}
 
-<main class="site_width padding" role="main">
-  <article class="{{post_class}}">
-    {{#if image}}
-    {{else}}
-    <header class="post-header">
-      <h1>{{{title}}}</h1>
+<main role="main">
+  <article class="{{post_class}} site-width">
+    {{#unless image}}
+    <header>
+      <h1 class="post-title">{{title}}</h1>
       <time datetime="{{date format='YYYY-MM-DD'}}">{{date format="dddd, MMMM DD, YYYY"}}</time>
     </header>
-    {{/if}}
+    {{/unless}}
 
-    <div class="entry margin_bottom">
+    <div>
       {{content}}
     </div>
 
-    <footer class="author-post relative">
-      {{#if author}}
-
-      {{#if author.image}}
-      <div class="author-thumb inline middle">
-        <img src="{{author.image}}" alt="Author image" class="border circle" />
-      </div>
+    {{#author}}
+    <footer>
+      {{#if image}}
+      <figure class="desktop">
+        <img src="{{image}}" alt="Author image" />
+      </figure>
       {{/if}}
 
-      <div class="inline middle align vertical">
-        <div>{{author}}</div>
-        <div>{{author.bio}}</div>
+      <div>
+        <div><a href="{{url}}"><strong>{{name}}</strong></a></div>
+        {{#if bio}}<p>{{bio}}</p>{{/if}}
       </div>
-
-      {{/if}}
     </footer>
-
-    {{!
-      Here, you can add disqus comment.
-      Also go to partials/disqus-comment to set your SHORTNAME.
-    }}
-    {{!> disqus-comment}}
+    {{/author}}
   </article>
 </main>
+
+<aside class="site-width">
+  <h6>Read more</h6>
+  {{#next_post}}
+  <a class="{{#if image}}cover" style="background-image: url({{image}}){{else}}no-cover{{/if}}" href="{{url}}">
+    <section class="post">
+      <h5>{{title}}</h5>
+      <p>{{excerpt words="19"}}&hellip;</p>
+    </section>
+  </a>
+  {{/next_post}}
+  {{#prev_post}}
+  <a class="right {{#if image}}cover" style="background-image: url({{image}}){{else}}no-cover{{/if}}" href="{{url}}">
+    <section class="post">
+      <h5>{{title}}</h5>
+      <p>{{excerpt words="19"}}&hellip;</p>
+    </section>
+  </a>
+  {{/prev_post}}
+</aside>
+
+{{!
+  Here, you can add disqus comment.
+  Also go to partials/disqus-comment to set your SHORTNAME.
+}}
+{{> loaders/load-disqus-comment}}
 
 {{/post}}
