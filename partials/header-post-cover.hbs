@@ -1,0 +1,20 @@
+<header class="blogpost cover" style="background-image: url({{image}})">
+  <nav>
+    <ul>
+      <li>
+        {{#if author.image}}<img src="{{author.image}}" alt="Author image" />{{/if}}
+        <span>{{author}}</span>
+      </li>
+    </ul>
+    <ul>
+      <li><a href="{{@blog.url}}"><strong>{{@blog.title}}</strong></a></li>
+    </ul>
+  </nav>
+
+  <div>
+    <nav class="site-width">
+      <h1>{{{title}}}</h1>
+      <time datetime="{{date format='YYYY-MM-DD'}}">{{date format="dddd, MMMM DD, YYYY"}}</time>
+    </nav>
+  </div>
+</header>
