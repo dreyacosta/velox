@@ -1,29 +1,24 @@
 {{#foreach posts}}
-
-<article class="padding">
-  <header class="excerpt">
-    <h4><a href="{{url}}">{{{title}}}</a></h4>
+<article class="{{post_class}} site-width">
+  <header>
+    <h2><a href="{{url}}">{{{title}}}</a></h2>
   </header>
-
   <div>
-    <p>{{excerpt words="40"}} <a href="{{url}}">&raquo;</a></p>
+    <p>{{excerpt words="40"}} <a class="read-more" href="{{url}}">&raquo;</a></p>
   </div>
-
-  <footer class="author">
+  <footer>
     {{#if author.image}}
-    <div class="author-thumb inline middle">
+    <figure class="desktop">
       <img src="{{author.image}}" alt="Foo" class="border circle" />
-    </div>
+    </figure>
     {{/if}}
-
-    <div class="inline middle">
+    <div>
       {{author}}
       {{tags prefix=" on "}}
       <time datetime="{{date format='YYYY-MM-DD'}}">{{date format="dddd, MMMM DD, YYYY"}}</time>
     </div>
   </footer>
 </article>
-
 {{/foreach}}
 
 {{pagination}}
