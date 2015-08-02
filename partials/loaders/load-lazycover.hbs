@@ -1,8 +1,9 @@
 <script>
+  var COVER = "https://lh4.googleusercontent.com/-fTzLzRHAplA/Ugq_5MJhupI/AAAAAAAAMU0/7AvDzSe3pCk/w2296-h1722-no/IMG_20130813_205258.jpg";
   var cb = function() {
     var lazyCoverLoader = document.querySelector(".lazy-cover-loader");
     if (lazyCoverLoader) {
-      lazyCoverLoader.style.backgroundImage = "url('https://lh4.googleusercontent.com/-fTzLzRHAplA/Ugq_5MJhupI/AAAAAAAAMU0/7AvDzSe3pCk/w2296-h1722-no/IMG_20130813_205258.jpg')";
+      lazyCoverLoader.style.backgroundImage = "url('" + COVER + "')";
     }
   };
   window.addEventListener('load', cb);
