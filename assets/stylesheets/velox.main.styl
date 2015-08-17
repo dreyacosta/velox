@@ -1,0 +1,165 @@
+html, body
+  color rgb(77, 77, 77)
+  font-family 'Merriweather'
+  font-size 18px
+  font-weight 300
+  vendor('font-smoothing', antialiased)
+
+blockquote
+  border-left 10px solid rgb(215, 215, 215)
+  font-family 'Raleway'
+  font-size .9rem
+  padding-left 1rem
+
+h1, h2, h3, h4, h5, h6
+  font-family 'Raleway'
+  font-weight 700
+  margin-bottom 1rem
+
+h1
+  font-size 3rem
+  line-height 3.3rem
+
+h2
+  font-size 2.2rem
+  line-height 2.5rem
+
+h3
+  font-size 1.9rem
+  line-height 2.2rem
+
+h4
+  font-size 1.6rem
+  line-height 1.9rem
+
+h5
+  font-size 1.3rem
+  line-height 1.6rem
+
+h6
+  font-size 1rem
+  line-height 1.3rem
+  vendor('text-transform', uppercase)
+
+input
+  color rgb(77, 77, 77)
+  font-family 'Merriweather'
+  font-size 18px
+  font-weight 300
+  vendor('font-smoothing', antialiased)
+  padding 1rem
+
+p, ul, ol, pre, .post header
+  letter-spacing .01rem
+  line-height 1.7rem
+
+blockquote, p, ul, ol, pre, hr, .post-template .post header
+  margin-bottom 2rem
+
+p:last-child, h1:last-child, h2:last-child, h3:last-child, h4:last-child, h5:last-child, h6:last-child
+  margin-bottom 0
+
+ul, ol
+  margin-left 2rem
+  ul, ol
+    margin-bottom 0
+
+a:hover
+  text-decoration underline
+
+pre
+  background rgb(244, 244, 244)
+  padding 1rem
+
+small
+  font-family 'Raleway'
+  font-size .8rem
+
+.video-container
+  position relative
+  padding-bottom 56.25%
+  iframe
+    position absolute
+    width 100%
+    height 100%
+
+.left
+  float left
+
+.right
+  float right
+
+.site-width
+  max-width 825px
+  margin 0 auto
+
+.main-header nav, header.cover nav, .post, .pagination, .site-footer
+  padding 2rem
+
+#disqus_thread
+  padding 0 2rem 2rem 2rem
+
+.pagination
+  text-align center
+
+.cover, .lazy-cover-loader
+  background-size cover
+  background-position center
+  color white
+  position relative
+  z-index 1
+
+.cover:before, .lazy-cover-loader:before
+  background rgba(0,0,0,0.6)
+  content ''
+  position absolute
+  width 100%
+  height 100%
+  top 0
+  left 0
+  z-index -1
+
+@media handheld, only screen and (max-width: 680px)
+  html, body
+    font-size 16px
+
+  h1
+    font-size 2rem
+    line-height 2.3rem
+
+  h2
+    font-size 1.8rem
+    line-height 2.1rem
+
+  h3
+    font-size 1.6rem
+    line-height 1.9rem
+
+  h4
+    font-size 1.4rem
+    line-height 1.7rem
+
+  h5
+    font-size 1.2rem
+    line-height 1.5rem
+
+  h6
+    font-size 1rem
+    line-height 1.3rem
+
+  aside
+    a
+      display block
+      max-width 100%
+      width 100%
+    > a
+      margin-bottom .4rem
+    .right
+      float none
+
+  .desktop
+    display none !important
+
+@media handheld, only screen and (max-width: 480px)
+  html, body
+    font-size 16px

@@ -1,0 +1,56 @@
+header.main-header
+  text-align center
+
+  nav
+    border-bottom 1px solid rgba(0,0,0,0.1)
+
+    > a
+      display inline-block
+      border 3px solid rgba(0,0,0,0.1)
+      vendor('border-radius', 50%)
+      margin-bottom 1.5rem
+
+    img
+      height 120px
+      width 120px
+      vendor('border-radius', 50%)
+      border 3px solid rgba(255,255,255,0.7)
+
+  .socials
+    font-size 2rem
+    margin-top 2rem
+
+  .blog-title
+    // font-size 2.5rem
+    font-size 2rem
+    // line-height 3.3rem
+    line-height 2.5rem
+    margin-bottom 0
+
+  .blog-description
+    // font-size 1.6rem
+    font-size 1.2rem
+    // line-height 2.2rem
+    line-height 1.7rem
+    font-weight 500
+    max-width 545px
+    margin 0 auto
+
+  .author-location
+    margin-top 2rem
+
+  .author-link
+    margin-top .5rem
+    a
+      color rgb(8, 140, 234)
+      text-decoration underline
+      vendor('transition', all 400ms)
+    a:hover
+      color #0647D5
+
+@media handheld, only screen and (max-width: 480px)
+  header.main-header
+    nav
+      img
+        height 90px
+        width 90px
