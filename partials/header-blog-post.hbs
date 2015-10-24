@@ -1,7 +1,7 @@
 <header class="main-header blog {{#if @blog.cover}}cover" style="background-image: url({{@blog.cover}}){{else}}lazy-cover-loader no-cover{{/if}}">
   <nav class="site-width">
     {{#if @blog.logo}}<a href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="Blog Logo" /></a>{{/if}}
-    <h3 class="blog-title"><a href="{{@blog.url}}">{{@blog.title}}</a></h1>
+    <h3 class="blog-title"><a href="{{@blog.url}}">{{@blog.title}}</a></h3>
     <h4 class="blog-description">{{@blog.description}}</h3>
 
     {{!> "social"}}
