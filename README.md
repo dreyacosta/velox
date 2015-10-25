@@ -2,7 +2,7 @@
 
 Responsive and minimal theme for Ghost focus on speed, typography and semantic.
 
-![velox 0.3.0](https://raw.githubusercontent.com/dreyacosta/velox/ghost-0.5.0/screenshots/velox-0.3.0-preview.jpg)
+![velox 0.3.0](https://raw.githubusercontent.com/dreyacosta/velox/master/screenshots/velox-0.3.0-preview.jpg)
 
 ## Support
 
@@ -17,17 +17,17 @@ Responsive and minimal theme for Ghost focus on speed, typography and semantic.
 ## PageSpeed test
 Test made with Google Analytics and Prism scripts on a page without images.
 
-![PageSpeed Mobile](https://raw.githubusercontent.com/dreyacosta/velox/ghost-0.5.0/screenshots/pagespeed-mobile.jpg)
+![PageSpeed Mobile](https://raw.githubusercontent.com/dreyacosta/velox/master/screenshots/pagespeed-mobile.jpg)
 
-![PageSpeed Desktop](https://raw.githubusercontent.com/dreyacosta/velox/ghost-0.5.0/screenshots/pagespeed-desktop.jpg)
+![PageSpeed Desktop](https://raw.githubusercontent.com/dreyacosta/velox/master/screenshots/pagespeed-desktop.jpg)
 
 ## W3C validation
 
-![W3C Home validation](https://raw.githubusercontent.com/dreyacosta/velox/ghost-0.5.0/screenshots/w3c-markup-home.jpg)
+![W3C Home validation](https://raw.githubusercontent.com/dreyacosta/velox/master/screenshots/w3c-markup-home.jpg)
 
-![W3C Author validation](https://raw.githubusercontent.com/dreyacosta/velox/ghost-0.5.0/screenshots/w3c-markup-author.jpg)
+![W3C Author validation](https://raw.githubusercontent.com/dreyacosta/velox/master/screenshots/w3c-markup-author.jpg)
 
-![W3C Tag validation](https://raw.githubusercontent.com/dreyacosta/velox/ghost-0.5.0/screenshots/w3c-markup-tag.jpg)
+![W3C Tag validation](https://raw.githubusercontent.com/dreyacosta/velox/master/screenshots/w3c-markup-tag.jpg)
 
 ## Customize CSS
 According [CSS optimization rules of Google](https://developers.google.com/speed/docs/insights/OptimizeCSSDelivery), CSS is deliver inline (default.hbs line 33).
