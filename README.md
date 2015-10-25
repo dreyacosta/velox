@@ -14,6 +14,8 @@ Responsive and minimal theme for Ghost focus on speed, typography and semantic.
 - Disqus comments
 - Post read next and previous
 
+See a live demo here [dreyacosta.com](http://dreyacosta.com).
+
 ## PageSpeed test
 Test made with Google Analytics and Prism scripts on a page without images.
 
