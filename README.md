@@ -2,7 +2,17 @@
 
 Responsive and minimal theme for Ghost focus on speed, typography and semantic.
 
-![velox 0.2.0](https://raw.githubusercontent.com/dreyacosta/velox/ghost-0.5.0/screenshots/velox-0.2.0-preview.jpg)
+![velox 0.3.0](https://raw.githubusercontent.com/dreyacosta/velox/ghost-0.5.0/screenshots/velox-0.3.0-preview.jpg)
+
+## Support
+
+- Author page
+- Tag page
+- Image post
+- Syntax highlighter
+- Meta data for SEO
+- Disqus comments
+- Post read next and previous
 
 ## PageSpeed test
 Test made with Google Analytics and Prism scripts on a page without images.
@@ -22,46 +32,52 @@ Test made with Google Analytics and Prism scripts on a page without images.
 ## Customize CSS
 According [CSS optimization rules of Google](https://developers.google.com/speed/docs/insights/OptimizeCSSDelivery), CSS is deliver inline (default.hbs line 33).
 
-You can customize CSS with [xpressio](https://github.com/dreyacosta/xpressio) framework. You can find the [xpressio Velox theme here](https://github.com/dreyacosta/xpressio/tree/master/source/themes/velox) and [how to compile with Grunt](https://github.com/dreyacosta/xpressio#build-your-theme).
+You can customize CSS with [stylus](https://github.com/dreyacosta/velox/assets/stylesheets).
 
 ## Optional set up
 
 #### Google Analytics
-default.hbs line 42:
+default.hbs line 48:
 ```
-{{> google-analytics}}
+{{> loaders/load-google-analytics}}
 ```
-google-analytics.hbs line 7:
+partials/loaders/load-google-analytics.hbs line 7:
 ```
 ga('create', 'YOUR-TRACK-ID', 'yourdomain.com');
 ```
 
 #### Disqus
-post.hbs line 68:
+post.hbs line 65:
 ```
-{{> disqus-comment}}
+{{> loaders/load-disqus-comment}}
 ```
-partials/disqus-comment.hbs line 4:
+partials/loaders/disqus-comment.hbs line 4:
 ```
 var disqus_shortname = 'YOUR-DISQUS-SHORTNAME';
 ```
 
 #### Authorship
-default.hbs line 19:
+default.hbs line 24:
 ```
 <link rel="author" href="//plus.google.com/YOUR-ID?rel=author" />
 ```
 
 #### Fonts
-default.hbs line 36:
+default.hbs line 41:
 ```
-{{> load-fonts}}
+{{> loaders/load-fonts}}
 ```
 
 #### Prism syntax highlighter
-default.hbs line 37:
+default.hbs line 42:
 ```
-{{> load-prism}}
+{{> loaders/load-prism}}
+```
+
+#### Lazy background cover
+default.hbs line 43:
+```
+{{> loaders/load-lazycover}}
 ```
 
 ## License
