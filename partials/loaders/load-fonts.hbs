@@ -1,5 +1,5 @@
 <script>
-  var cb = function() {
+  var loadFonts = function() {
     var createLink = function(source) {
       var l = document.createElement('link'); l.rel = 'stylesheet';
       l.href = source;
@@ -10,5 +10,5 @@
   };
 
   var raf = requestAnimationFrame || mozRequestAnimationFrame || webkitRequestAnimationFrame || msRequestAnimationFrame;
-  if (raf) { raf(cb); } else { window.addEventListener('load', cb); }
+  if (raf) { raf(cb); } else { window.addEventListener('load', loadFonts); }
 </script>
